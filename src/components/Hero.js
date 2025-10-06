@@ -39,12 +39,12 @@ const Hero = () => {
         <div className="hero-content">
           <img src="/assets/exelogo1.gif" alt=".exe Logo" className="hero-logo" />
           <h1 className="hero-title">.exe</h1>
-          <p className="hero-tagline">memecoin of the future</p>
+          <p className="hero-tagline">the shadows of solana</p>
           <p className="hero-subtitle">.exe everything</p>
           
           <div className="hero-buttons">
             <button 
-              className="btn btn-primary" 
+              className="btn btn-outline" 
               onClick={() => handleButtonClick(config.buyLink)}
             >
               Buy Now
@@ -54,12 +54,6 @@ const Hero = () => {
               onClick={() => handleButtonClick(config.chartLink)}
             >
               Chart
-            </button>
-            <button 
-              className="btn btn-outline" 
-              onClick={() => handleButtonClick(config.telegramLink)}
-            >
-              Telegram
             </button>
             <button 
               className="btn btn-outline" 
