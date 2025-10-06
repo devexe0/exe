@@ -22,11 +22,13 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'JetBrains Mono', 'Space Mono', 'Orbitron', monospace;
     line-height: 1.6;
     color: #ffffff;
     background: var(--bg-white);
     overflow-x: hidden;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -180,27 +182,36 @@ body {
 }
 
 .hero-title {
+    font-family: 'Orbitron', 'JetBrains Mono', monospace;
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 15px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(220, 38, 38, 0.5);
     animation: fadeInUp 1s ease;
     color: #ffffff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .hero-tagline {
+    font-family: 'Space Mono', 'JetBrains Mono', monospace;
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 8px;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s both;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
 }
 
 .hero-subtitle {
+    font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
     font-size: 1rem;
     margin-bottom: 30px;
     opacity: 0.8;
     animation: fadeInUp 1s ease 0.4s both;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
 }
 
 .hero-buttons {
@@ -213,6 +224,7 @@ body {
 }
 
 .btn {
+    font-family: 'JetBrains Mono', 'Space Mono', monospace;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -225,6 +237,8 @@ body {
     border: 2px solid transparent;
     cursor: pointer;
     min-width: 100px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .btn-primary {
@@ -325,6 +339,7 @@ body {
 
 /* Section Styles */
 .section-title {
+    font-family: 'Orbitron', 'JetBrains Mono', monospace;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
@@ -332,6 +347,8 @@ body {
     color: #ffffff;
     position: relative;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .section-title::after {
