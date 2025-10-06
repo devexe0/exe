@@ -1,6 +1,6 @@
 // Configuration - Load from environment variables or use defaults
 const config = {
-    contractAddress: '0x1234567890abcdef1234567890abcdef12345678',
+    contractAddress: 'ca.exe',
     buyLink: 'https://jup.ag/swap?inputMint=So11111111111111111111111111111111111111112&outputMint=0x1234567890abcdef1234567890abcdef12345678',
     chartLink: 'https://dexscreener.com/solana/0x1234567890abcdef1234567890abcdef12345678',
     twitterLink: 'https://x.com/solana_exe',
