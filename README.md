@@ -1,0 +1,2 @@
+# exe
+solana.exe
