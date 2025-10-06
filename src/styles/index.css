@@ -706,3 +706,198 @@ img {
 img[src=""] {
     opacity: 0;
 }
+
+/* Error Popup Styles - Windows 95/98/XP Aesthetic */
+.error-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 10000;
+    animation: fadeIn 0.3s ease;
+    pointer-events: none;
+}
+
+.error-popup-window {
+    background: #c0c0c0;
+    border: 2px outset #c0c0c0;
+    border-radius: 0;
+    box-shadow: 
+        2px 2px 0px #808080,
+        4px 4px 8px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
+    max-width: 500px;
+    font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 11px;
+    animation: popupSlideIn 0.3s ease;
+    pointer-events: auto;
+    position: relative;
+}
+
+.error-popup-titlebar {
+    background: linear-gradient(90deg, #0a246a 0%, #a6caf0 100%);
+    color: white;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 11px;
+    border-bottom: 1px solid #808080;
+}
+
+.error-popup-title {
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.error-popup-controls {
+    display: flex;
+    gap: 2px;
+}
+
+.error-popup-close {
+    background: #c0c0c0;
+    border: 1px outset #c0c0c0;
+    width: 16px;
+    height: 14px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.error-popup-close:hover {
+    background: #ff0000;
+    color: white;
+}
+
+.error-popup-close:active {
+    border: 1px inset #c0c0c0;
+}
+
+.error-popup-content {
+    background: white;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px inset #c0c0c0;
+}
+
+.error-popup-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.error-popup-message {
+    flex: 1;
+    color: #000;
+    line-height: 1.4;
+}
+
+.error-popup-main-message {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.error-popup-details {
+    font-size: 11px;
+    color: #000;
+    white-space: pre-line;
+    margin-bottom: 10px;
+}
+
+.error-popup-buttons {
+    background: #c0c0c0;
+    padding: 10px 20px 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    border-top: 1px solid #808080;
+}
+
+.error-popup-button {
+    background: #c0c0c0;
+    border: 2px outset #c0c0c0;
+    padding: 4px 12px;
+    font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    min-width: 60px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-popup-button:hover {
+    background: #d4d0c8;
+}
+
+.error-popup-button:active {
+    border: 2px inset #c0c0c0;
+    background: #a0a0a0;
+}
+
+.error-popup-button:focus {
+    outline: 1px dotted #000;
+    outline-offset: 1px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popupSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Responsive adjustments for error popups */
+@media (max-width: 768px) {
+    .error-popup-window {
+        min-width: 320px;
+        max-width: 90vw;
+        margin: 20px;
+    }
+    
+    .error-popup-content {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .error-popup-icon {
+        font-size: 24px;
+    }
+    
+    .error-popup-main-message {
+        font-size: 11px;
+    }
+    
+    .error-popup-details {
+        font-size: 10px;
+    }
+}

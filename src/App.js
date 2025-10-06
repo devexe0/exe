@@ -5,6 +5,7 @@ import Lore from './components/Lore';
 import HowToBuy from './components/HowToBuy';
 import Links from './components/Links';
 import Footer from './components/Footer';
+import ErrorPopup from './components/ErrorPopup';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HowToBuy />
       <Links />
       <Footer />
+      <ErrorPopup />
     </div>
   );
 }
