@@ -1,0 +1,24 @@
+# .exe Configuration
+# Copy this file to .env and update with your actual values
+
+# Contract Information
+CONTRACT_ADDRESS=0x1234567890abcdef1234567890abcdef12345678
+
+# Trading Links
+BUY_LINK=https://app.uniswap.org/#/swap?outputCurrency=0x1234567890abcdef1234567890abcdef12345678
+CHART_LINK=https://dextools.io/app/ether/pair-explorer/0x1234567890abcdef1234567890abcdef12345678
+DEX_LINK=https://app.uniswap.org/#/swap?outputCurrency=0x1234567890abcdef1234567890abcdef12345678
+DEXTOOLS_LINK=https://dextools.io/app/ether/pair-explorer/0x1234567890abcdef1234567890abcdef12345678
+
+# Social Media Links
+TWITTER_LINK=https://x.com/solana_exe
+TELEGRAM_LINK=https://t.me/dogecoin2
+DISCORD_LINK=https://discord.gg/dogecoin2
+
+# Additional Links
+COINGECKO_LINK=https://www.coingecko.com/en/coins/dogecoin-2
+
+# Site Information
+SITE_TITLE=.exe
+SITE_DESCRIPTION=.exe
+SITE_URL=https://exe-coin.com
