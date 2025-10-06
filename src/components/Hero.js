@@ -4,9 +4,9 @@ const Hero = () => {
   const [showCopyFeedback, setShowCopyFeedback] = useState(false);
   
   const config = {
-    contractAddress: 'ca.exe',
-    buyLink: 'https://jup.ag/swap?inputMint=So11111111111111111111111111111111111111112&outputMint=0x1234567890abcdef1234567890abcdef12345678',
-    chartLink: 'https://dexscreener.com/solana/0x1234567890abcdef1234567890abcdef12345678',
+    contractAddress: 'EkUABqHMatLtpU9v1pM6699Eo3f3bWdEDZfYwVUppump',
+    buyLink: 'https://jup.ag/tokens/EkUABqHMatLtpU9v1pM6699Eo3f3bWdEDZfYwVUppump',
+    chartLink: 'https://dexscreener.com/solana/egj5zw56ktkc3daaszebtvqxwvq7uqj6idztxtj8x8ex',
     twitterLink: 'https://x.com/solana_exe',
     telegramLink: 'https://t.me/solana_exe'
   };

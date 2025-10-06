@@ -5,12 +5,12 @@ const Links = () => {
     {
       icon: '🪐',
       name: 'Jupiter',
-      url: 'https://jup.ag/swap?inputMint=So11111111111111111111111111111111111111112&outputMint=0x1234567890abcdef1234567890abcdef12345678'
+      url: 'https://jup.ag/tokens/EkUABqHMatLtpU9v1pM6699Eo3f3bWdEDZfYwVUppump'
     },
     {
       icon: '📊',
       name: 'DexScreener',
-      url: 'https://dexscreener.com/solana/0x1234567890abcdef1234567890abcdef12345678'
+      url: 'https://dexscreener.com/solana/egj5zw56ktkc3daaszebtvqxwvq7uqj6idztxtj8x8ex'
     },
     {
       icon: '🐦',
