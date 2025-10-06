@@ -1,0 +1,14 @@
+{
+  "name": "exe-coin-website",
+  "version": "1.0.0",
+  "description": ".exe",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": ["meme", "coin", "cryptocurrency", "exe", "website"],
+  "author": ".exe Team",
+  "license": "MIT"
+}
