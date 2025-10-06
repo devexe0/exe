@@ -6,7 +6,9 @@
   "scripts": {
     "start": "python -m http.server 8000",
     "dev": "python -m http.server 8000",
-    "serve": "python -m http.server 8000"
+    "serve": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "vercel-build": "echo 'Static site - no build required'"
   },
   "keywords": ["meme", "coin", "cryptocurrency", "exe", "website"],
   "author": ".exe Team",
